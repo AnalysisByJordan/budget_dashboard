@@ -212,6 +212,7 @@ year_items = input_df.Year.unique()
 # In[13]:
 
 app = dash.Dash(__name__)
+server = app.server
 app.layout = html.Div(className = "full-page", children = [
     html.Div(className = "header", children = [
         html.Div(className = "header-text", children = [
